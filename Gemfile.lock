@@ -1,13 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.0)
+    addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
-    httparty (0.14.0)
+    httparty (0.15.5)
       multi_xml (>= 0.5.2)
     mini_portile2 (2.1.0)
     multi_xml (0.6.0)
-    nokogiri (1.7.0.1)
+    nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     public_suffix (2.0.5)
 
@@ -20,7 +20,7 @@ DEPENDENCIES
   nokogiri!
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.4.1p111
 
 BUNDLED WITH
-   1.14.4
+   1.15.0
