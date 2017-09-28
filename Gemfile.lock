@@ -1,15 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
-    httparty (0.15.5)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    httparty (0.15.6)
       multi_xml (>= 0.5.2)
-    mini_portile2 (2.2.0)
+    mini_portile2 (2.3.0)
     multi_xml (0.6.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
-    public_suffix (2.0.5)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
+    public_suffix (3.0.0)
 
 PLATFORMS
   ruby
@@ -19,8 +19,5 @@ DEPENDENCIES
   httparty!
   nokogiri!
 
-RUBY VERSION
-   ruby 2.4.1p111
-
 BUNDLED WITH
-   1.15.1
+   1.16.0.pre.2
