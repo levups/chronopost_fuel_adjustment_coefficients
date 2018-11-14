@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'chronopost_fuel_adjustment_coefficients'
+
+ch = ChronopostFuelAdjustmentCoefficients.new
+puts "# Fuel multipliers for #{ch.time_period}"
+puts "# Fetched from #{ch.url}"
+puts
+puts "AIR_FUEL_MULTIPLIER  = #{format '%.4f', ch.air_multiplier}"
+puts "ROAD_FUEL_MULTIPLIER = #{format '%.4f', ch.road_multiplier}"

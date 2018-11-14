@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-require "chronopost_fuel_multiplier"
-
-ch = ChronopostFuelMultiplier.new
-puts "# Fuel multipliers for '#{ch.time_period}'"
-puts "# Fetched from #{ch.url}"
-puts ""
-puts "AIR_FUEL_MULTIPLIER  = #{ch.air_multiplier}"
-puts "ROAD_FUEL_MULTIPLIER = #{ch.road_multiplier}"
