@@ -27,6 +27,7 @@ GEM
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     public_suffix (3.0.3)
+    rake (12.3.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
@@ -38,6 +39,7 @@ DEPENDENCIES
   chronopost_fuel_adjustment_coefficients!
   minitest (~> 5.1)
   minitest-stub_any_instance (~> 1.0)
+  rake (~> 12.3)
 
 BUNDLED WITH
    1.17.1
