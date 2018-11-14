@@ -2,11 +2,11 @@
 
 require 'bigdecimal'
 require 'http'
-require 'nokogiri'
+require 'oga'
 
 class ChronopostFuelAdjustmentCoefficients
   def initialize
-    @document = ::Nokogiri::HTML response.to_s
+    @document = ::Oga.parse_html response.to_s
   end
 
   def time_period

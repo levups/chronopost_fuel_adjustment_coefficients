@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.bindir      = 'bin'
   s.executables = 'chronopost_fuel_adjustment_coefficients'
 
-  s.add_dependency 'http',     '~> 4.0'
-  s.add_dependency 'nokogiri', '~> 1.8.5'
+  s.add_dependency 'http', '~> 4.0'
+  s.add_dependency 'oga', '~> 2.10'
 
   s.add_development_dependency 'minitest', '~> 5.1'
   s.add_development_dependency 'minitest-stub_any_instance', '~> 1.0'
