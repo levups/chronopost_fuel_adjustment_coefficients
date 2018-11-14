@@ -10,7 +10,7 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
       assert_equal 'Novembre 2018', @adjustement_coefficient.time_period
     end
 
-    failing_response do
+    failing_case do
       assert_nil @adjustement_coefficient.time_period
     end
   end
@@ -20,7 +20,7 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
       assert_equal 1.2000, @adjustement_coefficient.air_multiplier
     end
 
-    failing_response do
+    failing_case do
       assert_nil @adjustement_coefficient.air_multiplier
     end
   end
@@ -30,7 +30,7 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
       assert_equal 1.1400, @adjustement_coefficient.road_multiplier
     end
 
-    failing_response do
+    failing_case do
       assert_nil @adjustement_coefficient.road_multiplier
     end
   end
@@ -45,7 +45,7 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
     end
   end
 
-  def failing_response
+  def failing_case
     ChronopostFuelAdjustmentCoefficients.stub_any_instance :response, '' do
       @adjustement_coefficient = ChronopostFuelAdjustmentCoefficients.new
       yield
