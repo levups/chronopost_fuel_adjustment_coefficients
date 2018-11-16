@@ -32,6 +32,10 @@ Gem::Specification.new do |s|
   s.executables = 'chronopost_fuel_adjustment_coefficients'
   s.require_paths = ['lib']
 
+  # Signature config
+  s.cert_chain  = ['certs/bob_levups.pem']
+  s.signing_key = File.expand_path('~/.ssh/bob_levups-gem-private_key.pem') if $0 =~ /gem\z/
+
   s.add_dependency 'http', '~> 4.0'
   s.add_dependency 'oga', '~> 2.10'
 
