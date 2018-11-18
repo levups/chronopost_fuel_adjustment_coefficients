@@ -2,7 +2,6 @@
 
 require 'bigdecimal'
 require 'http'
-require 'oga'
 
 class ChronopostFuelAdjustmentCoefficients
   def initialize
