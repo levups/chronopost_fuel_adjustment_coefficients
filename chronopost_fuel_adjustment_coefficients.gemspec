@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "chronopost_fuel_adjustment_coefficients"
-  s.version     = "0.2.1"
+  s.version     = "0.3.0"
   s.authors     = ["Bob Maerten", "Clément Joubert"]
   s.email       = ["bob@levups.com", "clement@levups.com"]
 
