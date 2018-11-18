@@ -7,7 +7,7 @@ Style/StringLiterals:
 Style/GuardClause:
   Exclude:
     - './*.gemspec'
-  
+
 Metrics/BlockLength:
   Exclude:
     - './*.gemspec'
@@ -16,3 +16,14 @@ Metrics/LineLength:
   Exclude:
     - './*.gemspec'
 
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/chronopost_fuel_adjustment_coefficients.rb'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'lib/chronopost_fuel_adjustment_coefficients.rb'
+    - 'test/chronopost_fuel_adjustment_coefficients_test.rb'
