@@ -36,8 +36,6 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
   end
 
   def test_live_values
-    skip if stub_tests?
-
     live_chronopost = ChronopostFuelAdjustmentCoefficients.new
     colissimo_date = Date.parse live_chronopost.time_period
 
@@ -66,9 +64,5 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
       @adjustement_coefficient = ChronopostFuelAdjustmentCoefficients.new
       yield
     end
-  end
-
-  def stub_tests?
-    !(ENV["NO_STUBBED_TESTS"] || ENV["TRAVIS_EVENT_TYPE"] == "cron")
   end
 end
