@@ -10,17 +10,12 @@ Gem::Specification.new do |s|
   s.homepage    = "https://rubygems.org/gems/chronopost_fuel_adjustment_coefficients"
   s.license     = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if s.respond_to?(:metadata)
-    s.metadata["allowed_push_host"] = "https://rubygems.org"
-
-    s.metadata["homepage_uri"]    = s.homepage
-    s.metadata["source_code_uri"] = "https://github.com/levups/chronopost_fuel_adjustment_coefficients"
-    s.metadata["changelog_uri"]   = "https://github.com/levups/chronopost_fuel_adjustment_coefficients/blob/master/CHANGELOG.md"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
+  s.metadata = {
+    "bug_tracker_uri" => "https://github.com/levups/chronopost_fuel_adjustment_coefficients/issues",
+    "changelog_uri" => "https://github.com/levups/chronopost_fuel_adjustment_coefficients/blob/master/CHANGELOG.md",
+    "homepage_uri" => "https://rubygems.org/gems/chronopost_fuel_adjustment_coefficients",
+    "source_code_uri" => "https://github.com/levups/chronopost_fuel_adjustment_coefficients"
+  }
 
   s.bindir        = "exe"
   s.executables   = "chronopost_fuel_adjustment_coefficients"
