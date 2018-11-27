@@ -1,5 +1,25 @@
 # Change Log
 
+## [v0.3.0](https://github.com/levups/chronopost_fuel_adjustment_coefficients/tree/v0.3.0) (2018-11-27)
+[Full Changelog](https://github.com/levups/chronopost_fuel_adjustment_coefficients/compare/v0.2.1...v0.3.0)
+
+**Closed issues:**
+
+- Replace Oga usage with plain standard REXML parsing? [\#18](https://github.com/levups/chronopost_fuel_adjustment_coefficients/issues/18)
+
+**Merged pull requests:**
+
+- Replace oga with plain string parsing [\#19](https://github.com/levups/chronopost_fuel_adjustment_coefficients/pull/19) ([bobmaerten](https://github.com/bobmaerten))
+- Prepare for official gem release [\#17](https://github.com/levups/chronopost_fuel_adjustment_coefficients/pull/17) ([bobmaerten](https://github.com/bobmaerten))
+
+## [v0.2.1](https://github.com/levups/chronopost_fuel_adjustment_coefficients/tree/v0.2.1) (2018-11-16)
+[Full Changelog](https://github.com/levups/chronopost_fuel_adjustment_coefficients/compare/v0.2.0...v0.2.1)
+
+**Closed issues:**
+
+- Sign gem before publishing it [\#16](https://github.com/levups/chronopost_fuel_adjustment_coefficients/issues/16)
+- Comply to `bundle gem` defaults [\#15](https://github.com/levups/chronopost_fuel_adjustment_coefficients/issues/15)
+
 ## [v0.2.0](https://github.com/levups/chronopost_fuel_adjustment_coefficients/tree/v0.2.0) (2018-11-14)
 [Full Changelog](https://github.com/levups/chronopost_fuel_adjustment_coefficients/compare/v0.1.1...v0.2.0)
 
