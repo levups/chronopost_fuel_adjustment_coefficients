@@ -35,6 +35,20 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
     end
   end
 
+  def test_live_values
+    live_chronopost = ChronopostFuelAdjustmentCoefficients.new
+    colissimo_date = Date.parse live_chronopost.time_period
+
+    assert_equal Date.today.month, colissimo_date.month
+    assert_equal Date.today.year, colissimo_date.year
+
+    assert_kind_of BigDecimal, live_chronopost.air_multiplier
+    assert_operator live_chronopost.air_multiplier, :>=, 1.0
+
+    assert_kind_of BigDecimal, live_chronopost.road_multiplier
+    assert_operator live_chronopost.road_multiplier, :>=, 1.0
+  end
+
   private
 
   def nominal_case
