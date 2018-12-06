@@ -35,12 +35,18 @@ class ChronopostFuelAdjustmentCoefficientsTest < Minitest::Test
     end
   end
 
+  FRENCH_MONTHS = %w[janvier février mars avril mai juin juillet août
+                     septembre octobre novembre décembre].freeze
+
   def test_live_values
     live_chronopost = ChronopostFuelAdjustmentCoefficients.new
-    colissimo_date = Date.parse live_chronopost.time_period
 
-    assert_equal Date.today.month, colissimo_date.month
-    assert_equal Date.today.year, colissimo_date.year
+    time_period   = live_chronopost.time_period
+    current_month = FRENCH_MONTHS[Date.today.month - 1]
+
+    assert_kind_of String, time_period
+    assert time_period.downcase.start_with?(current_month)
+    assert time_period.end_with?(Date.today.year.to_s)
 
     assert_kind_of BigDecimal, live_chronopost.air_multiplier
     assert_operator live_chronopost.air_multiplier, :>=, 1.0
